@@ -15,26 +15,26 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('artist_title')->default(0)->nullable();
-            $table->string('catno')->default(0)->nullable();
-            $table->string('year')->default(0)->nullable();
-            $table->string('media_format')->default(0)->nullable();
-            $table->string('primary_condition')->default(0)->nullable();
-            $table->string('media_condition')->default(0)->nullable();
-            $table->string('sleeve_condition')->default(0)->nullable();
-            $table->string('label')->default(0)->nullable();
-            $table->string('price')->default(0)->nullable();
-            $table->string('category')->default(0)->nullable();
-            $table->string('sku')->default(0)->nullable();
-            $table->string('woocommerce_product_id')->default(0)->nullable();
-            $table->string('discogs_product_id')->default(0)->nullable();
-            $table->string('discogs_listings')->default(0)->nullable();
-            $table->longtext('product_description')->default(0)->nullable();
-            $table->string('discogs_release_id')->default(0)->nullable();
-            $table->string('location')->default(0)->nullable();
-            $table->string('comments')->default(0)->nullable();
-            $table->string('discogs_comment')->default(0)->nullable();
-            $table->string('shipping_class')->default(0)->nullable();
+            $table->string('artist_title')->nullable();
+            $table->string('catno')->nullable();
+            $table->string('year')->nullable();
+            $table->string('media_format')->nullable();
+            $table->string('primary_condition')->nullable();
+            $table->string('media_condition')->nullable();
+            $table->string('sleeve_condition')->nullable();
+            $table->string('label')->nullable();
+            $table->string('price')->nullable();
+            $table->string('category')->nullable();
+            $table->string('sku')->nullable();
+            $table->string('woocommerce_product_id')->nullable();
+            $table->string('discogs_product_id')->nullable();
+            $table->string('discogs_listings')->nullable();
+            $table->longtext('product_description')->nullable();
+            $table->string('discogs_release_id')->nullable();
+            $table->string('location')->nullable();
+            $table->string('comments')->nullable();
+            $table->string('discogs_comment')->nullable();
+            $table->string('shipping_class')->nullable();
 
 
             // $table->text('tracklist')->default(0)->nullable();
