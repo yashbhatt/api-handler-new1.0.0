@@ -14,7 +14,7 @@ class AddEuroPriceToProductsTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->string('euro_price')->default('0')->nullable();
+            $table->string('euro_price')->default('0');
         });
     }
 
