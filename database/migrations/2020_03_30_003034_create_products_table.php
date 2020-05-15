@@ -36,7 +36,6 @@ class CreateProductsTable extends Migration
             $table->string('discogs_comment')->nullable();
             $table->string('shipping_class')->nullable();
 
-
             // $table->text('tracklist')->default(0)->nullable();
             // $table->text('videos')->default(0)->nullable();
             // $table->text('format')->default(0)->nullable();
